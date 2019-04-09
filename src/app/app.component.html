@@ -1,12 +1,14 @@
-<!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
-  <h1>
-    {{ title }}!
-  </h1>
-  <nav>
-  	<a routerLink="/dashboard">Dashboard</a>
-  	<br>
-    <a routerLink="/restaurants">Restaurants</a>
-  </nav>
+	<nav>
+		<div class="nav-wrapper">
+			<span>{{ title | uppercase}}</span>
+			<ul id="nav-mobile" class="right">
+				<li><a routerLink="/dashboard">Dashboard</a></li>
+				<li><a routerLink="/restaurants">Restaurants</a></li>
+			</ul>
+		</div>
+	</nav>
 </div>
-<router-outlet></router-outlet>
+<div class="container">
+	<router-outlet></router-outlet>
+</div>

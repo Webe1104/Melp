@@ -10,9 +10,8 @@ import { RESTAURANTS } from '../mock-restaurants';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
-	// restaurans: Restaurants[] = [];
-	restaurant = RESTAURANTS;
-	// restaurant.sort((a,b) => {return a - b});
+	restaurants: Restaurant[] = [];
+
 	constructor(private restaurantService: RestaurantService) { }
 
 	ngOnInit() {

@@ -1,9 +1,9 @@
 <h2>Mis Restaurantes</h2>
-<ul class="restaurant">
-  <li *ngFor="let item of restaurant">
-  		<a routerLink="/detail/{{item.id}}">
+<ul class="restaurants">
+  <li *ngFor="let restaurant of restaurants">
+  		<a routerLink="/detail/{{restaurant.id}}">
   			
-    		<span class="badge">{{item.id}}</span> {{item.name}} {{item.site}}
+    		<span class="badge">{{restaurant.id}}</span> {{restaurant.name}} {{restaurant.site}}
   		</a>
   </li>
 </ul>

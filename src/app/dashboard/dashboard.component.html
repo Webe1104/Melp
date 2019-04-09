@@ -1,9 +1,11 @@
 <h3>Top Restaurants</h3>
 <div class="grid grid-pad">
-  <a *ngFor="let item of restaurants" class="col-1-4"
-  		routerLink='/detail/{{item.id}}'>
-    <div class="module item">
-      <h4>{{item.name}}</h4>
+  <a *ngFor="let restaurant of restaurants" class=""
+  		routerLink='/detail/{{restaurant.id}}'>
+    <div class="module restaurant">
+      <h4>{{restaurant.name}}</h4>
+      <p>{{restaurant.rating}}</p>
+      <p>{{restaurant.site}}</p>
     </div>
   </a>
 </div>

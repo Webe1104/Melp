@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { Restaurant } from '../restaurant';
-import { RESTAURANTS } from '../mock-restaurants';
+// import { RESTAURANTS } from '../mock-restaurants';
 import { RestaurantService } from '../restaurant.service';
 
 
@@ -13,8 +13,8 @@ import { RestaurantService } from '../restaurant.service';
 
 export class RestaurantsComponent implements OnInit {
 
-  restaurant = RESTAURANTS;
-  // restaurant: Restaurant[];
+  // restaurant = RESTAURANTS;
+  restaurants: Restaurant[];
   // restaurant: Restaurant[] = new Array<Restaurant>();
    
 

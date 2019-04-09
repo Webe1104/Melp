@@ -4,7 +4,7 @@ import { Location } from '@angular/common';
 
 import { Restaurant } from '../restaurant';
 import { RestaurantService } from '../restaurant.service';
-import { RESTAURANTS } from '../mock-restaurants';
+// import { RESTAURANTS } from '../mock-restaurants';
 
 @Component({
   selector: 'app-restaurant-detail',
@@ -13,6 +13,7 @@ import { RESTAURANTS } from '../mock-restaurants';
 })
 export class RestaurantDetailComponent implements OnInit {
 	@Input() restaurant: Restaurant;
+	// @Input() restaurant= RESTAURANTS;
 	
 	constructor(
 		private route: ActivatedRoute,

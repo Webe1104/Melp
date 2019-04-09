@@ -48,5 +48,41 @@ export const RESTAURANTS : Restaurant[] = [
 		latitude:99.3,
 		longitude:-91.2,
 		rating:2
+	},
+	{
+		id: 5,
+		name: 'Grill',
+		site: 'www.sanborns.com',
+		email:'sanborns@hotmail.com',
+		phone:'5511876543',
+		street:'Siempre sanborns',
+		city:'CDMX',
+		latitude:99.3,
+		longitude:-91.2,
+		rating:2
+	},
+	{
+		id: 6,
+		name: 'Sushi',
+		site: 'www.sanborns.com',
+		email:'sanborns@hotmail.com',
+		phone:'5511876543',
+		street:'Siempre sanborns',
+		city:'CDMX',
+		latitude:99.3,
+		longitude:-91.2,
+		rating:2
+	},
+	{
+		id: 7,
+		name: 'Roll',
+		site: 'www.sanborns.com',
+		email:'sanborns@hotmail.com',
+		phone:'5511876543',
+		street:'Siempre sanborns',
+		city:'CDMX',
+		latitude:99.3,
+		longitude:-91.2,
+		rating:1
 	}
 ]
