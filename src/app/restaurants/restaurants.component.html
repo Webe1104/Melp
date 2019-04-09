@@ -1,0 +1,23 @@
+<div *ngIf="selectedRestaurant">
+	<h1>{{selectedRestaurant.name | uppercase}}</h1>
+	<div><span>id: </span>{{selectedRestaurant.id}}</div>
+	<div><span>name: </span>{{selectedRestaurant.name}}</div>
+	<div><span>site: </span>{{selectedRestaurant.site}}</div>
+	<div><span>email: </span>{{selectedRestaurant.email}}</div>
+	<div><span>phone: </span>{{selectedRestaurant.phone}}</div>
+	<div><span>street: </span>{{selectedRestaurant.street}}</div>
+	<div><span>city: </span>{{selectedRestaurant.city}}</div>
+	<div><span>latitude: </span>{{selectedRestaurant.latitude}}</div>
+	<div><span>longitude: </span>{{selectedRestaurant.longitude}}</div>
+	<div><span>rating: </span>{{selectedRestaurant.rating}}</div>
+</div>
+
+<h2>Mis Restaurantes</h2>
+<ul class="restaurant">
+  <li *ngFor="let item of restaurant"
+  		[class.selected]="item === selectedRestaurant"
+  		(click)="onSelect(item)">
+    <span class="badge">{{item.id}}</span> {{item.name}} {{item.site}}
+  </li>
+</ul>
+
