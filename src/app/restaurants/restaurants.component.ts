@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Restaurant } from '../restaurant';
 
+import { Restaurant } from '../restaurant';
 import { RESTAURANTS } from '../mock-restaurants';
+import { RestaurantService } from '../restaurant.service';
 
 
 @Component({
@@ -13,13 +14,20 @@ import { RESTAURANTS } from '../mock-restaurants';
 export class RestaurantsComponent implements OnInit {
 
   restaurant = RESTAURANTS;
+  // restaurant = Restaurant[];
   selectedRestaurant: Restaurant;
   onSelect(restaurant: Restaurant) : void{
   	this.selectedRestaurant = restaurant;
   }
-  constructor() { }
+  // constructor() { }
+  constructor(private restaurantService: RestaurantService) { }
 
   ngOnInit() {
+    this.getRestaurants();
   }
 
+  getRestaurants(): void {
+    // this.restaurants = this.restaurantService.getRestaurants();
+    this.restaurantService.getRestaurants().subscribe(restaurants => this.restaurants = restaurants)
+  }
 }
