@@ -3,7 +3,7 @@ import {Restaurant} from './restaurant';
 export const RESTAURANTS : Restaurant[] = [
 	{
 		id: 1,
-		name: 'Chilpa2',
+		name: 'Chilpa',
 		site: 'www.chilpa.com',
 		email:'chilpa@hotmail.com',
 		phone:'5511876543',
@@ -23,7 +23,7 @@ export const RESTAURANTS : Restaurant[] = [
 		city:'CDMX',
 		latitude:99.3,
 		longitude:-91.2,
-		rating:5
+		rating:4
 	},
 	{
 		id: 3,
@@ -35,7 +35,7 @@ export const RESTAURANTS : Restaurant[] = [
 		city:'CDMX',
 		latitude:99.3,
 		longitude:-91.2,
-		rating:5
+		rating:3
 	},
 	{
 		id: 4,
@@ -47,6 +47,6 @@ export const RESTAURANTS : Restaurant[] = [
 		city:'CDMX',
 		latitude:99.3,
 		longitude:-91.2,
-		rating:5
+		rating:2
 	}
 ]

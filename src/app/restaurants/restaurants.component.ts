@@ -21,11 +21,11 @@ export class RestaurantsComponent implements OnInit {
   constructor(private restaurantService: RestaurantService) { }
 
   ngOnInit() {
-    this.getRestaurants();
+    this.getRestaurantsByProp('name');
   }
 
-  getRestaurants(): void {
+  getRestaurantsByProp(prop: string): void {
     this.restaurantService.getRestaurants()
-      .subscribe(restaurants => this.restaurants = restaurants)
+      .subscribe(restaurants => this.restaurants = restaurants.sort((a, b) => a[prop] > b[prop] ? 1 : a[prop] === b[prop] ? 0 : -1))
   }
 }

@@ -12,16 +12,17 @@ import { RESTAURANTS } from '../mock-restaurants';
 export class DashboardComponent implements OnInit {
 	// restaurans: Restaurants[] = [];
 	restaurant = RESTAURANTS;
-
+	// restaurant.sort((a,b) => {return a - b});
 	constructor(private restaurantService: RestaurantService) { }
 
 	ngOnInit() {
-	  this.getRestaurants();
+	  this.getRestaurantsByProp('id');
 	}
 
-	getRestaurants(): void {
+	//Returns Restaurants by prop
+	getRestaurantsByProp(prop: string): void {
 	  this.restaurantService.getRestaurants()
-	  	.subscribe(restaurants => this.restaurants = restaurants.slice(1,5))
+	  	.subscribe(restaurants => this.restaurants = restaurants.sort((a, b) => a[prop] > b[prop] ? 1 : a[prop] === b[prop] ? 0 : -1))
 	}
 
 }
