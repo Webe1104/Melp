@@ -1,11 +1,14 @@
 <h2>Mis Restaurantes</h2>
-<ul class="restaurants">
-  <li *ngFor="let restaurant of restaurants">
-  		<a routerLink="/detail/{{restaurant.id}}">
-  			
-    		<span class="badge">{{restaurant.id}}</span> {{restaurant.name}} {{restaurant.site}}
-  		</a>
-  </li>
-</ul>
+<div class="list-container">
+	<ul class="restaurants">
+	  <li *ngFor="let restaurant of restaurants">
+	  		<a routerLink="/detail/{{restaurant.id}}">
+	  			
+	    		<span class="badge">{{restaurant.id}}</span> {{restaurant.name}} {{restaurant.site}}
+	    		
+	  		</a>
+	  </li>
+	</ul>
+</div>
 <button (click)="getRestaurantsByProp('rating')">rating</button>
 <button (click)="getRestaurantsByProp('name')">name</button>

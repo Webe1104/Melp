@@ -1,14 +1,26 @@
 <h3>Top Restaurants</h3>
-<div class="grid grid-pad">
-  <a *ngFor="let restaurant of restaurants" class=""
-  		routerLink='/detail/{{restaurant.id}}'>
-    <div class="module restaurant">
-      <h4>{{restaurant.name}}</h4>
-      <p>{{restaurant.rating}}</p>
-      <p>{{restaurant.site}}</p>
-    </div>
-  </a>
+<div>
+	<ul class="list-container">
+		<li>
+		  <a *ngFor="let restaurant of restaurants" class="container"
+		  		routerLink='/detail/{{restaurant.id}}'>
+		    <div class="module restaurant row">
+		      <div class="col s5">
+		      	<img class="restaurant-img" src="../assets/images/restaurant1.jpg">
+		      </div>
+		      <div class="col s7">
+		      	<h4>{{restaurant.name}}</h4>
+			      <p>{{restaurant.site}}</p>
+			      <i class="material-icons" *ngFor="let i of arr(restaurant.rating)">
+			        stars
+			      </i>
+		      </div>
+		    </div>
+		  </a>
+		</li>
+	</ul>
 </div>
+
 <button (click)="getRestaurantsByProp('rating')">rating</button>
 <button (click)="getRestaurantsByProp('name')">name</button>
 <a class="waves-effect waves-light btn">button</a>

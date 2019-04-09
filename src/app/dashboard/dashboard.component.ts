@@ -15,13 +15,18 @@ export class DashboardComponent implements OnInit {
 	constructor(private restaurantService: RestaurantService) { }
 
 	ngOnInit() {
-	  this.getRestaurantsByProp('id');
+	  this.getRestaurantsByProp('rating');
 	}
 
-	//Returns Restaurants by prop
+	//Returns Restaurants by prop (mayor a menor)
 	getRestaurantsByProp(prop: string): void {
 	  this.restaurantService.getRestaurants()
-	  	.subscribe(restaurants => this.restaurants = restaurants.sort((a, b) => a[prop] > b[prop] ? 1 : a[prop] === b[prop] ? 0 : -1))
+	  	.subscribe(restaurants => this.restaurants = restaurants.sort((a, b) => a[prop] < b[prop] ? 1 : a[prop] === b[prop] ? 0 : -1))
+	}
+
+
+	arr(size: number){
+		return Array.from(Array(size), (_, i) => i);
 	}
 
 }
