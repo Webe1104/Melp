@@ -14,12 +14,10 @@ import { RestaurantService } from '../restaurant.service';
 export class RestaurantsComponent implements OnInit {
 
   restaurant = RESTAURANTS;
-  // restaurant = Restaurant[];
-  selectedRestaurant: Restaurant;
-  onSelect(restaurant: Restaurant) : void{
-  	this.selectedRestaurant = restaurant;
-  }
-  // constructor() { }
+  // restaurant: Restaurant[];
+  // restaurant: Restaurant[] = new Array<Restaurant>();
+   
+
   constructor(private restaurantService: RestaurantService) { }
 
   ngOnInit() {
@@ -27,7 +25,7 @@ export class RestaurantsComponent implements OnInit {
   }
 
   getRestaurants(): void {
-    // this.restaurants = this.restaurantService.getRestaurants();
-    this.restaurantService.getRestaurants().subscribe(restaurants => this.restaurants = restaurants)
+    this.restaurantService.getRestaurants()
+      .subscribe(restaurants => this.restaurants = restaurants)
   }
 }
