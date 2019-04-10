@@ -16,8 +16,8 @@
 	</div>
 </div>
 
-<agm-map [latitude]="getLatitude()" [longitude]="(restaurant.longitude)" [zoom]="15">
-  <agm-marker [latitude]="getLatitude()" [longitude]="(restaurant.longitude)"></agm-marker>
+<agm-map [latitude]="(restaurant.lat)" [longitude]="(restaurant.lng)" [zoom]="15">
+  <agm-marker [latitude]="(restaurant.lat)" [longitude]="(restaurant.lng)"></agm-marker>
 </agm-map>
 
 <button (click)="goBack()">go back</button>

@@ -7,7 +7,7 @@ export class Restaurant {
 	street: string;
 	city:string;
 	state: string;
-	latitude: number;
-	longitude: number;
+	lat: number;
+	lng: number;
 	rating: number;
 }
