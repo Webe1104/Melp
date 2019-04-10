@@ -36,7 +36,7 @@ export class RestaurantDetailComponent implements OnInit {
 	}
 
 	getLatitude(){
-		return this.restaurant.latitude;
+		return this.restaurant.lat;
 	}
 
 	goBack(): void {
