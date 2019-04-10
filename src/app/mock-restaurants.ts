@@ -9,8 +9,8 @@ export const RESTAURANTS : Restaurant[] = [
 		phone:'5511876543',
 		street:'Siempre Viva',
 		city:'CDMX',
-		latitude:99.3,
-		longitude:-91.2,
+		latitude:19.437904276994995,
+		longitude:-99.12865767750226,
 		rating:5
 	},
 	{
@@ -21,8 +21,8 @@ export const RESTAURANTS : Restaurant[] = [
 		phone:'5511876543',
 		street:'Siempre pescadito',
 		city:'CDMX',
-		latitude:99.3,
-		longitude:-91.2,
+		latitude:19.437904276994995,
+		longitude:-99.12865767750226,
 		rating:4
 	},
 	{
@@ -33,8 +33,8 @@ export const RESTAURANTS : Restaurant[] = [
 		phone:'5511876543',
 		street:'Siempre vips',
 		city:'CDMX',
-		latitude:99.3,
-		longitude:-91.2,
+		latitude:19.437904276994995,
+		longitude:-99.12865767750226,
 		rating:3
 	},
 	{
@@ -45,8 +45,8 @@ export const RESTAURANTS : Restaurant[] = [
 		phone:'5511876543',
 		street:'Siempre sanborns',
 		city:'CDMX',
-		latitude:99.3,
-		longitude:-91.2,
+		latitude:19.437904276994995,
+		longitude:-99.12865767750226,
 		rating:2
 	},
 	{
@@ -57,8 +57,8 @@ export const RESTAURANTS : Restaurant[] = [
 		phone:'5511876543',
 		street:'Siempre sanborns',
 		city:'CDMX',
-		latitude:99.3,
-		longitude:-91.2,
+		latitude:19.437904276994995,
+		longitude:-99.12865767750226,
 		rating:2
 	},
 	{
@@ -69,8 +69,8 @@ export const RESTAURANTS : Restaurant[] = [
 		phone:'5511876543',
 		street:'Siempre sanborns',
 		city:'CDMX',
-		latitude:99.3,
-		longitude:-91.2,
+		latitude:19.437904276994995,
+		longitude:-99.12865767750226,
 		rating:2
 	},
 	{
@@ -81,8 +81,8 @@ export const RESTAURANTS : Restaurant[] = [
 		phone:'5511876543',
 		street:'Siempre sanborns',
 		city:'CDMX',
-		latitude:99.3,
-		longitude:-91.2,
+		latitude:19.437904276994995,
+		longitude:-99.12865767750226,
 		rating:1
 	}
 ]

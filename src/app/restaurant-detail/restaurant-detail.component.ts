@@ -13,8 +13,7 @@ import { RestaurantService } from '../restaurant.service';
 })
 export class RestaurantDetailComponent implements OnInit {
 	@Input() restaurant: Restaurant;
-	// @Input() restaurant= RESTAURANTS;
-	
+
 	constructor(
 		private route: ActivatedRoute,
 		private restaurantService: RestaurantService,
@@ -24,15 +23,20 @@ export class RestaurantDetailComponent implements OnInit {
 	ngOnInit() {
 		this.getRestaurant();
 	}
-
+   
 	getRestaurant(): void {
 	  const id = +this.route.snapshot.paramMap.get('id');
 	  this.restaurantService.getRestaurant(id)
 	    .subscribe(restaurant => this.restaurant = restaurant);
 	}
 
+	// Receive a number x return an array with x
 	arr(size: number){
 		return Array.from(Array(size), (_, i) => i);
+	}
+
+	getLatitude(){
+		return this.restaurant.latitude;
 	}
 
 	goBack(): void {

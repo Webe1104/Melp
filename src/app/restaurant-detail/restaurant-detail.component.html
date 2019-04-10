@@ -13,9 +13,10 @@
 		  stars
 		</i>
 	</div>
-	
-	
-	<div><span>latitude: </span>{{restaurant.latitude}}</div>
-	<div><span>longitude: </span>{{restaurant.longitude}}</div>
 </div>
+
+<agm-map [latitude]="getLatitude()" [longitude]="(restaurant.longitude)" [zoom]="15">
+  <agm-marker [latitude]="getLatitude()" [longitude]="(restaurant.longitude)"></agm-marker>
+</agm-map>
+
 <button (click)="goBack()">go back</button>

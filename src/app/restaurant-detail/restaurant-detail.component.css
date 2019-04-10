@@ -33,5 +33,8 @@ button:disabled {
 
 .restaurant-img{
   width: 400px;
+}
 
+agm-map {
+  height: 300px;
 }
