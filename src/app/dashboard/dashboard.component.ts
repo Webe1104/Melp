@@ -21,7 +21,7 @@ export class DashboardComponent implements OnInit {
 	//Returns Restaurants by prop (mayor a menor)
 	getRestaurantsByProp(prop: string): void {
 	  this.restaurantService.getRestaurants()
-	  	.subscribe(restaurants => this.restaurants = restaurants.sort((a, b) => a[prop] < b[prop] ? 1 : a[prop] === b[prop] ? 0 : -1))
+	  	.subscribe(restaurants => this.restaurants = restaurants.sort((a, b) => a[prop] < b[prop] ? 1 : a[prop] === b[prop] ? 0 : -1).slice(1,10))
 	}
 
 	arr(size: number){

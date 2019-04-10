@@ -1,19 +1,6 @@
 import {Restaurant} from './restaurant';
 
 export const RESTAURANTS : Restaurant[] = [
-{
-    	id: 1,
-		name: 'Chilpa',
-		site: 'www.chilpa.com',
-		email:'chilpa@hotmail.com',
-		phone:'5511876543',
-		street:'Siempre Viva',
-		city:'CDMX',
-		state:'México',
-		lat:19.437904276994995,
-		lng:-99.12865767750226,
-		rating:5
-},
 	{
 		id: 851799,
 		rating: 1,
