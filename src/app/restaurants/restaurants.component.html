@@ -1,4 +1,12 @@
 <h2>Restaurantes</h2>
+<div>
+	<label>Filters</label>
+	<br>
+	<a (click)="getRestaurantsByPropMajor('rating')" class="waves-effect waves-light blue btn">Rating</a>
+	<a (click)="getRestaurantsByPropMinor('name')" class="waves-effect waves-light blue btn">Name</a>
+</div>
+<br>
+
 <ul class="list-container">
 	<li *ngFor="let restaurant of restaurants">
 	  <a class="container"
@@ -10,6 +18,9 @@
 	      <div class="col s7">
 	      	<h4>{{restaurant.name}}</h4>
 		      <p>{{restaurant.site}}</p>
+		      <p>{{restaurant.phone}}</p>
+		      <p>{{restaurant.state}}</p>
+		      <p>{{restaurant.city}}</p>
 		      <i class="material-icons" *ngFor="let i of arr(restaurant.rating)">
 		        stars
 		      </i>
@@ -19,6 +30,3 @@
 	</li>
 </ul>
 
-
-<button (click)="getRestaurantsByProp('rating')">rating</button>
-<button (click)="getRestaurantsByProp('name')">name</button>
