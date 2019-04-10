@@ -1,4 +1,4 @@
-.restaurants {
+/*.restaurants {
   margin: 0 0 2em 0;
   list-style-type: none;
   padding: 0;
@@ -47,4 +47,108 @@
   text-align: right;
   margin-right: .8em;
   border-radius: 4px 0 0 4px;
+}*/
+
+/********************/
+
+[class*='col-'] {
+  float: left;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+[class*='col-']:last-of-type {
+  padding-right: 0;
+}
+a {
+  text-decoration: none;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 0;
+}
+h4 {
+  position: relative;
+}
+/*.grid {
+  margin: 0;
+}*/
+.module {
+  text-align: center;
+  color: #eee;
+  background-color: #607d8b;
+  border-radius: 2px;
+}
+.module:hover {
+  background-color: #eee;
+  cursor: pointer;
+  color: #607d8b;
+}
+/*.grid-pad {
+  padding: 10px 0;
+}
+.grid-pad > [class*='col-']:last-of-type {
+  padding-right: 20px;
+}*/
+@media (max-width: 600px) {
+  .module {
+    font-size: 10px;
+    max-height: 75px; }
+}
+@media (max-width: 1024px) {
+  /*.grid {
+    margin: 0;
+  }*/
+  .module {
+    min-width: 60px;
+  }
+}
+
+/*List Items*/
+.list-container{
+  box-sizing: border-box;
+  height: 300px;
+}
+
+.list-container, .list-container:after, .list-container:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ul {
+  /*position: absolute;*/
+  top: 20px;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  overflow: scroll;
+  margin: 0;
+  padding: 0;
+  
+  border: 2px solid #ccc;
+  
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  
+  /*// Again, this is where the magic happens*/
+  -webkit-overflow-scrolling: touch;
+}
+
+li {
+  padding: 10px 15px;
+  
+  
+  &:last-child {
+    border-bottom: none;
+  }
+  
+  &:nth-child(even) {
+    background: #f8f8f8;
+  }
+}
+
+.restaurant-img{
+  width: 200px;
+  margin: 30px;
 }

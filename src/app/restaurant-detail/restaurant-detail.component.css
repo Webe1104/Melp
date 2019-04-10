@@ -28,3 +28,10 @@ button:disabled {
   color: #ccc;
   cursor: auto;
 }
+
+/************/
+
+.restaurant-img{
+  width: 400px;
+
+}

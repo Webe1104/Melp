@@ -31,6 +31,10 @@ export class RestaurantDetailComponent implements OnInit {
 	    .subscribe(restaurant => this.restaurant = restaurant);
 	}
 
+	arr(size: number){
+		return Array.from(Array(size), (_, i) => i);
+	}
+
 	goBack(): void {
 	    this.location.back();
 	  }

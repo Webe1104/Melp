@@ -28,4 +28,8 @@ export class RestaurantsComponent implements OnInit {
     this.restaurantService.getRestaurants()
       .subscribe(restaurants => this.restaurants = restaurants.sort((a, b) => a[prop] > b[prop] ? 1 : a[prop] === b[prop] ? 0 : -1))
   }
+
+  arr(size: number){
+    return Array.from(Array(size), (_, i) => i);
+  }
 }

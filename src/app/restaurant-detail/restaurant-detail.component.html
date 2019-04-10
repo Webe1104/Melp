@@ -1,14 +1,21 @@
-<div *ngIf="restaurant">
+<div *ngIf="restaurant" class="center row">
 	<h1>{{restaurant.name | uppercase}}</h1>
-	<div><span>id: </span>{{restaurant.id}}</div>
-	<div><span>name: </span>{{restaurant.name}}</div>
-	<div><span>site: </span>{{restaurant.site}}</div>
-	<div><span>email: </span>{{restaurant.email}}</div>
-	<div><span>phone: </span>{{restaurant.phone}}</div>
-	<div><span>street: </span>{{restaurant.street}}</div>
-	<div><span>city: </span>{{restaurant.city}}</div>
+	<div class="col s12 m6 l6">
+		<img class="restaurant-img" src="../assets/images/restaurant1.jpg">
+	</div>
+	<div class="col s12 m6 l6">
+		<div>{{restaurant.site}}</div>
+		<div>{{restaurant.email}}</div>
+		<div>{{restaurant.phone}}</div>
+		<div>{{restaurant.street}}</div>
+		<div>{{restaurant.city}}</div>
+		<i class="material-icons" *ngFor="let i of arr(restaurant.rating)">
+		  stars
+		</i>
+	</div>
+	
+	
 	<div><span>latitude: </span>{{restaurant.latitude}}</div>
 	<div><span>longitude: </span>{{restaurant.longitude}}</div>
-	<div><span>rating: </span>{{restaurant.rating}}</div>
 </div>
 <button (click)="goBack()">go back</button>
